@@ -1,0 +1,48 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Color Switcher</title>
+</head>
+<body class="body" style = "background-color: #212121; color: #fff;">
+     <div  style = "background-color: #5c4e4e; color: #290202;">
+        <button class="red" style="background-color: red; color: #290202;">red</button>
+        <button class="blue"style="background-color: rgb(42, 16, 192); color: #290202;">blue</button>
+        <button class="yellow"style="background-color: rgb(234, 238, 19); color: #290202;">yellow</button>
+        <button class="green"style="background-color: rgb(17, 214, 76); color: #290202;">green</button>
+     </div>
+
+     <script>
+          const Body = document.querySelector('.body')
+
+          const red = document.querySelector('.red')
+          const blue = document.querySelector('.blue')
+          const yellow = document.querySelector('.yellow')
+          const green = document.querySelector('.green')
+         if (red)
+         {
+            red.onclick = () => {Body.style.backgroundColor = 'red'}
+         }
+          if (blue)
+         {
+            blue.onclick = () => {Body.style.backgroundColor = 'blue'}
+         }
+          if (yellow)
+         {
+            yellow.onclick = () => {Body.style.backgroundColor = 'yellow'}
+         }
+         if (green) 
+         {
+            green.onclick = () => {Body.style.backgroundColor = 'green'}
+         }
+
+         
+         
+
+         
+     </script>
+
+</body>
+</html> 
+

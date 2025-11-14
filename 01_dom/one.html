@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM </title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <div class="parent">
+        <!-- this is a comment -->
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+</body>
+<script>
+    const parent = document.querySelector('.parent')
+    console.log(parent);
+    console.log(parent.children);
+    console.log(parent.children[1].innerHTML);
+
+    for(let i = 0; i < parent.children.length; i++)
+       {
+        console.log(parent.children[i].innerHTML);
+       }
+    parent.children[1].style.color = "orange"
+    console.log(parent.firstElementChild);
+    console.log(parent.lastElementChild);
+    
+    const dayOne = document.querySelector('.day')
+    console.log(dayOne);
+    console.log(dayOne.parentElement);
+    console.log(dayOne.nextElementSibling);
+
+    parent.children[2].style.color = "pink"
+
+    console.log("NODES: ", parent.childNodes);
+
+    const div = document.createElement('div')
+    console.log(div)
+    div.className = "main"
+    div.id = Math.round(Math.random() * 10 + 1)
+    div.setAttribute("title", "my-new-title")
+    div.style.padding = "12px"
+    div.style.backgroundColor = "green"
+    //div.innerText = "holiday"
+    const addText = document.createTextNode("holiday")
+    div.appendChild(addText)
+    
+    const newDiv = document.createElement('div')
+    console.log(newDiv)
+    newDiv.className = "my-class"
+    newDiv.id = Math.round(Math.random() * 10 + 1)
+    newDiv.setAttribute("title", "new-title-two")
+    newDiv.style.padding = "15px"
+    newDiv.style.animation =  "fade-out 1s forwards"
+    newDiv.style.backgroundColor = "gray"
+    const addNewText = document.createTextNode("public-holiday")
+    newDiv.appendChild(addNewText)
+
+
+    document.body.appendChild(div)
+    document.body.appendChild(newDiv)
+
+
+</script>
+</html>
