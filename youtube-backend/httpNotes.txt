@@ -1,0 +1,54 @@
+what are http headers ?
+metadata -> key-value pairs sent with req-res
+
+use cases :
+caching, authentication, manage state
+
+req header -> from client
+res header -> from server
+representation header -> encoding/compression
+payload headers -> data
+
+most common headers :
+accept: application/json
+user-agent
+authorization
+content-type
+cookie
+cache-control
+
+cors 
+acces-control-allow-origin
+acces-control-allow-credentials
+acces-control-allow-method
+
+security
+cross-origin-embedder-policy
+cross-origin-opener-policy
+content-security-policy
+X-XSS-Protection
+
+
+http methods
+get, head, options, trace, delete, put, post, patch
+
+http status codes:
+1xx  informational
+2xx  success
+3xx  redirecion
+4xx  client error
+5xx  server error
+
+100 continue
+102 processing
+200 ok
+201 created
+202 accepted
+307 temporary redirect
+308 permanent redirect
+400 bad request
+401 unauthorized
+402 payment required
+404 not found
+504 gateway timeout
+
